@@ -1,70 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Kenya Airways - Flight Search</title>
+  <meta charset="UTF-8">
+  <title>MaxAir Booking</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
     body {
-      margin: 0;
       font-family: Arial, sans-serif;
-      background-color: #f2f2f2;
+      margin: 0;
+      background: #f2f2f2;
     }
 
     header {
-      background: #fff;
-      padding: 10px 15px;
+      background: white;
+      padding: 10px;
+      text-align: center;
       border-bottom: 1px solid #ccc;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
     }
 
-    .logo {
-      display: flex;
-      align-items: center;
-    }
-
-    .logo img {
+    header img {
       height: 40px;
-      margin-right: 10px;
+      vertical-align: middle;
     }
 
-    .menu-icon {
-      font-size: 24px;
+    .refine-search {
+      background: #f7f7f7;
+      padding: 10px;
+      border-bottom: 1px solid #ccc;
+    }
+
+    .refine-search button {
+      background: #e0e0e0;
+      border: none;
+      padding: 10px 20px;
+      font-weight: bold;
       cursor: pointer;
     }
 
-    .search-bar {
-      padding: 10px;
-      background: #eee;
+    .route {
+      padding: 15px;
+      font-size: 18px;
       text-align: center;
       font-weight: bold;
     }
 
-    .flight-header {
-      text-align: center;
-      font-size: 20px;
-      margin: 15px 0;
-    }
-
-    .dates {
+    .date-selector {
       display: flex;
       justify-content: center;
       gap: 10px;
-      margin-bottom: 20px;
+      padding: 0 10px;
     }
 
-    .date-card {
+    .date-box {
       background: white;
-      padding: 10px;
-      border-radius: 5px;
       border: 1px solid #ccc;
-      min-width: 100px;
+      border-radius: 5px;
+      padding: 10px;
       text-align: center;
+      width: 100px;
+      font-size: 14px;
     }
 
-    .selected {
+    .date-box.selected {
       border: 2px solid #000;
     }
 
@@ -72,118 +69,115 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background: red;
-      color: white;
       padding: 10px;
-      border-radius: 5px;
-      font-size: 24px;
+    }
+
+    .arrow img {
+      width: 20px;
     }
 
     .flight-info {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       background: white;
-      padding: 15px;
-      margin: 0 10px;
-      border-radius: 5px;
-      align-items: center;
-    }
-
-    .flight-info div {
-      text-align: center;
+      padding: 15px 20px;
+      font-size: 16px;
+      border-top: 1px solid #ccc;
     }
 
     .price {
+      text-align: right;
       font-weight: bold;
     }
 
-    .nav-buttons {
+    .navigation {
       display: flex;
       justify-content: space-between;
       padding: 20px;
+      background: #f7f7f7;
     }
 
-    .btn {
+    .navigation button {
       padding: 10px 20px;
+      font-weight: bold;
       border: none;
-      font-size: 16px;
-      border-radius: 5px;
+      border-radius: 3px;
       cursor: pointer;
     }
 
-    .btn-prev {
+    .navigation .prev {
       background: #ccc;
-      color: black;
+      color: #444;
     }
 
-    .btn-next {
+    .navigation .next {
       background: red;
       color: white;
     }
 
-    .footer {
+    footer {
       text-align: center;
-      font-size: 14px;
+      font-size: 12px;
+      color: #888;
       padding: 10px;
-      background: #f9f9f9;
+      background: #f2f2f2;
     }
 
-    .footer span {
-      color: #0073e6;
+    .powered-by {
+      color: #0066cc;
     }
   </style>
 </head>
 <body>
 
   <header>
-    <div class="logo">
-      <img src="kenya-airways6062.jpg" alt="Logo" />
-    </div>
-    <div class="menu-icon">&#9776;</div>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/MaxAir_logo.png" alt="MaxAir Logo" />
   </header>
 
-  <div class="search-bar">Refine Search</div>
+  <div class="refine-search">
+    <button>Refine Search</button>
+  </div>
 
-  <div class="flight-header">Outbound: Nairobi to Tanzania</div>
+  <div class="route">Outbound: Abuja to Maiduguri</div>
 
-  <div class="dates">
-    <div class="date-card">
-      <div>Thu,14 Nov</div>
-      <div>from<br><strong>40,000.00</strong><br>KES</div>
+  <div class="date-selector">
+    <div class="arrow">&#9664;</div>
+
+    <div class="date-box">Thu,14 Nov<br><strong>from<br>90,000.00<br>NGN</strong></div>
+    <div class="date-box selected">Fri,15 Nov<br><strong>from<br>90,000.00<br>NGN</strong></div>
+    <div class="date-box">Sat,16 Nov<br><strong>from<br>90,000.00<br>NGN</strong></div>
+
+    <div class="arrow" style="background: red; border-radius: 50%; padding: 8px;">
+      <span style="color: white; font-size: 18px;">&#9654;</span>
     </div>
-    <div class="date-card selected">
-      <div>Fri,05 April</div>
-      <div>from<br><strong>40,000.00</strong><br>KES</div>
-    </div>
-    <div class="date-card">
-      <div>Sat,06 April</div>
-      <div>from<br><strong>40,000.00</strong><br>KES</div>
-    </div>
-    <div class="arrow">&rsaquo;</div>
   </div>
 
   <div class="flight-info">
     <div>
-      <div><strong>11:10</strong></div>
-      <div>15 Nov</div>
-      <div>Abuja</div>
+      <strong>11:10</strong><br>
+      15 Nov<br>
+      Abuja
     </div>
     <div>
-      <div><strong>12:20</strong></div>
-      <div>15 Nov</div>
-      <div>Maiduguri</div>
+      <strong>12:20</strong><br>
+      15 Nov<br>
+      Maiduguri
     </div>
     <div class="price">
-      from<br><strong>90,000.00</strong><br>NGN
+      from<br>
+      90,000.00<br>
+      NGN
     </div>
   </div>
 
-  <div class="nav-buttons">
-    <button class="btn btn-prev">&lt; Previous</button>
-    <button class="btn btn-next">Next &gt;</button>
+  <div class="navigation">
+    <button class="prev">&lt; Previous</button>
+    <button class="next">Next &gt;</button>
   </div>
 
-  <div class="footer">powered by <span>Videcom</span></div>
+  <footer>
+    powered by <span class="powered-by">Videcom</span>
+  </footer>
 
 </body>
 </html>
