@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kenya Airways - Flight Search</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #f2f2f2;
+    }
+
+    header {
+      background: #fff;
+      padding: 10px 15px;
+      border-bottom: 1px solid #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    .logo img {
+      height: 40px;
+      margin-right: 10px;
+    }
+
+    .menu-icon {
+      font-size: 24px;
+      cursor: pointer;
+    }
+
+    .search-bar {
+      padding: 10px;
+      background: #eee;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    .flight-header {
+      text-align: center;
+      font-size: 20px;
+      margin: 15px 0;
+    }
+
+    .dates {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-bottom: 20px;
+    }
+
+    .date-card {
+      background: white;
+      padding: 10px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      min-width: 100px;
+      text-align: center;
+    }
+
+    .selected {
+      border: 2px solid #000;
+    }
+
+    .arrow {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: red;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      font-size: 24px;
+    }
+
+    .flight-info {
+      display: flex;
+      justify-content: space-around;
+      background: white;
+      padding: 15px;
+      margin: 0 10px;
+      border-radius: 5px;
+      align-items: center;
+    }
+
+    .flight-info div {
+      text-align: center;
+    }
+
+    .price {
+      font-weight: bold;
+    }
+
+    .nav-buttons {
+      display: flex;
+      justify-content: space-between;
+      padding: 20px;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .btn-prev {
+      background: #ccc;
+      color: black;
+    }
+
+    .btn-next {
+      background: red;
+      color: white;
+    }
+
+    .footer {
+      text-align: center;
+      font-size: 14px;
+      padding: 10px;
+      background: #f9f9f9;
+    }
+
+    .footer span {
+      color: #0073e6;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">
+      <img src="kenya-airways6062.jpg" alt="Logo" />
+    </div>
+    <div class="menu-icon">&#9776;</div>
+  </header>
+
+  <div class="search-bar">Refine Search</div>
+
+  <div class="flight-header">Outbound: Nairobi to Tanzania</div>
+
+  <div class="dates">
+    <div class="date-card">
+      <div>Thu,14 Nov</div>
+      <div>from<br><strong>40,000.00</strong><br>KES</div>
+    </div>
+    <div class="date-card selected">
+      <div>Fri,05 April</div>
+      <div>from<br><strong>40,000.00</strong><br>KES</div>
+    </div>
+    <div class="date-card">
+      <div>Sat,06 April</div>
+      <div>from<br><strong>40,000.00</strong><br>KES</div>
+    </div>
+    <div class="arrow">&rsaquo;</div>
+  </div>
+
+  <div class="flight-info">
+    <div>
+      <div><strong>11:10</strong></div>
+      <div>15 Nov</div>
+      <div>Abuja</div>
+    </div>
+    <div>
+      <div><strong>12:20</strong></div>
+      <div>15 Nov</div>
+      <div>Maiduguri</div>
+    </div>
+    <div class="price">
+      from<br><strong>90,000.00</strong><br>NGN
+    </div>
+  </div>
+
+  <div class="nav-buttons">
+    <button class="btn btn-prev">&lt; Previous</button>
+    <button class="btn btn-next">Next &gt;</button>
+  </div>
+
+  <div class="footer">powered by <span>Videcom</span></div>
+
+</body>
+</html>
