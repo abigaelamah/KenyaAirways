@@ -1,183 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>MaxAir Booking</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background: #f2f2f2;
-    }
-
-    header {
-      background: white;
-      padding: 10px;
-      text-align: center;
-      border-bottom: 1px solid #ccc;
-    }
-
-    header img {
-      height: 40px;
-      vertical-align: middle;
-    }
-
-    .refine-search {
-      background: #f7f7f7;
-      padding: 10px;
-      border-bottom: 1px solid #ccc;
-    }
-
-    .refine-search button {
-      background: #e0e0e0;
-      border: none;
-      padding: 10px 20px;
-      font-weight: bold;
-      cursor: pointer;
-    }
-
-    .route {
-      padding: 15px;
-      font-size: 18px;
-      text-align: center;
-      font-weight: bold;
-    }
-
-    .date-selector {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      padding: 0 10px;
-    }
-
-    .date-box {
-      background: white;
-      border: 1px solid #ccc;
-      border-radius: 5px;
-      padding: 10px;
-      text-align: center;
-      width: 100px;
-      font-size: 14px;
-    }
-
-    .date-box.selected {
-      border: 2px solid #000;
-    }
-
-    .arrow {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 10px;
-    }
-
-    .arrow img {
-      width: 20px;
-    }
-
-    .flight-info {
-      display: flex;
-      justify-content: space-between;
-      background: white;
-      padding: 15px 20px;
-      font-size: 16px;
-      border-top: 1px solid #ccc;
-    }
-
-    .price {
-      text-align: right;
-      font-weight: bold;
-    }
-
-    .navigation {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px;
-      background: #f7f7f7;
-    }
-
-    .navigation button {
-      padding: 10px 20px;
-      font-weight: bold;
-      border: none;
-      border-radius: 3px;
-      cursor: pointer;
-    }
-
-    .navigation .prev {
-      background: #ccc;
-      color: #444;
-    }
-
-    .navigation .next {
-      background: red;
-      color: white;
-    }
-
-    footer {
-      text-align: center;
-      font-size: 12px;
-      color: #888;
-      padding: 10px;
-      background: #f2f2f2;
-    }
-
-    .powered-by {
-      color: #0066cc;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kenya Airways Ticket</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #fff;
+            color: #000;
+            padding: 20px;
+        }
+        .ticket {
+            width: 600px;
+            border: 2px solid red;
+            padding: 20px;
+            background-color: white;
+            text-align: center;
+        }
+        .header {
+            background-color: red;
+            color: white;
+            padding: 10px;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        .logo {
+            width: 150px;
+            margin: 10px auto;
+        }
+        .details {
+            text-align: left;
+            margin-top: 20px;
+        }
+        .details p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: red;
+        }
+    </style>
 </head>
 <body>
-
-  <header>
-    <img src="https://upload.wikimedia.org/wikipedia/commons/2/2f/MaxAir_logo.png" alt="MaxAir Logo" />
-  </header>
-
-  <div class="refine-search">
-    <button>Refine Search</button>
-  </div>
-
-  <div class="route">Outbound: Abuja to Maiduguri</div>
-
-  <div class="date-selector">
-    <div class="arrow">&#9664;</div>
-
-    <div class="date-box">Thu,14 Nov<br><strong>from<br>90,000.00<br>NGN</strong></div>
-    <div class="date-box selected">Fri,15 Nov<br><strong>from<br>90,000.00<br>NGN</strong></div>
-    <div class="date-box">Sat,16 Nov<br><strong>from<br>90,000.00<br>NGN</strong></div>
-
-    <div class="arrow" style="background: red; border-radius: 50%; padding: 8px;">
-      <span style="color: white; font-size: 18px;">&#9654;</span>
+    <div class="ticket">
+        <div class="header">KENYA AIRWAYS TRAVEL TICKET</div>
+        <img class="logo" src="https://upload.wikimedia.org/wikipedia/en/thumb/5/57/Kenya_Airways_Logo.svg/2560px-Kenya_Airways_Logo.svg.png" alt="Kenya Airways Logo">
+        
+        <div class="details">
+            <p><strong>Passenger Name:</strong> Jacob Amaitsa Fayama</p>
+            <p><strong>Class:</strong> Business Class</p>
+            
+            <h3>Departure Flight</h3>
+            <p><strong>Flight Number:</strong> KQ310</p>
+            <p><strong>Route:</strong> Nairobi (NBO) → Dubai (DXB)</p>
+            <p><strong>Date:</strong> 6th April 2025</p>
+            <p><strong>Departure Time:</strong> 10:00 AM (EAT)</p>
+            <p><strong>Arrival Time:</strong> 4:00 PM (GST)</p>
+            
+            <h3>Return Flight</h3>
+            <p><strong>Flight Number:</strong> KQ311</p>
+            <p><strong>Route:</strong> Dubai (DXB) → Nairobi (NBO)</p>
+            <p><strong>Date:</strong> 8th April 2025</p>
+            <p><strong>Departure Time:</strong> 11:00 PM (GST)</p>
+            <p><strong>Arrival Time:</strong> 3:30 AM (EAT)</p>
+            
+            <h3>Additional Details</h3>
+            <p><strong>Luggage Allowance:</strong> 2 Checked Bags (32kg each) + 1 Carry-on (10kg)</p>
+            <p><strong>Booking Reference:</strong> KQ-FA12345</p>
+            <p><strong>Gate & Terminal:</strong> Provided at check-in</p>
+            <p><strong>Seat Selection:</strong> Business Class – Window Seat Assigned</p>
+        </div>
+        
+        <div class="footer">
+            <p>Kenya Airways Contact:</p>
+            <p>Website: <a href="https://www.kenya-airways.com" target="_blank">www.kenya-airways.com</a></p>
+            <p>Customer Support: +254 20 327 4747</p>
+        </div>
     </div>
-  </div>
-
-  <div class="flight-info">
-    <div>
-      <strong>11:10</strong><br>
-      15 Nov<br>
-      Abuja
-    </div>
-    <div>
-      <strong>12:20</strong><br>
-      15 Nov<br>
-      Maiduguri
-    </div>
-    <div class="price">
-      from<br>
-      90,000.00<br>
-      NGN
-    </div>
-  </div>
-
-  <div class="navigation">
-    <button class="prev">&lt; Previous</button>
-    <button class="next">Next &gt;</button>
-  </div>
-
-  <footer>
-    powered by <span class="powered-by">Videcom</span>
-  </footer>
-
 </body>
 </html>
